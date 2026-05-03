@@ -35,3 +35,6 @@ next-env.d.ts
 graphify/
 graphify-out/
 .agents/
+
+# Tools
+free-claude-code/
