@@ -1,32 +1,32 @@
 'use client';
 import React from 'react';
-import GlobeVideo from './GlobeVideo';
 
 export default function GlobalNetworkSection() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-24 pb-0 z-10 border-t border-slate-200">
-      {/* ── 5: GLOBAL NETWORK OF PRECISION ── */}
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-24">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+    <section className="relative overflow-hidden bg-slate-50 py-20 lg:py-24 z-10 border-t border-slate-200">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
           
-          {/* Left Column: Minimalist Typography */}
-          <div className="lg:w-5/12 text-left pt-[5%]">
-            <h2 className="text-5xl md:text-6xl lg:text-[72px] font-light text-[#1f2937] tracking-tight leading-[1.05] mb-8" style={{ fontFamily: 'Georgia, serif' }}>
-              Global<br/>Presence,<br/>Local Expertise
+          <div className="flex flex-col justify-center h-full text-left max-w-xl">
+            <h2 className="text-5xl md:text-6xl lg:text-[68px] font-light text-[#1f2937] tracking-tight leading-[1.05] mb-8" style={{ fontFamily: 'Georgia, serif' }}>
+              Global<br />Presence,<br />Local Expertise
             </h2>
-            <p className="text-gray-500 text-lg md:text-xl max-w-sm leading-relaxed mb-16 font-light">
+
+            <p className="text-gray-500 text-lg md:text-xl max-w-md leading-relaxed mb-12 font-light">
               Headquartered in Stockholm with regional offices across three continents. We deliver consistent service quality while meeting local regulatory and compliance requirements.
             </p>
             
-            <div className="space-y-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-8 lg:gap-9">
               <div>
                 <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#9ca3af] mb-1.5 block">European Hub</span>
                 <h4 className="text-xl font-light text-[#1f2937] tracking-tight">Stockholm, SE</h4>
               </div>
+
               <div>
                 <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#9ca3af] mb-1.5 block">Americas Hub</span>
                 <h4 className="text-xl font-light text-[#1f2937] tracking-tight">Austin, US</h4>
               </div>
+
               <div>
                 <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#9ca3af] mb-1.5 block">APAC Hub</span>
                 <h4 className="text-xl font-light text-[#1f2937] tracking-tight">Singapore, SG</h4>
@@ -34,16 +34,11 @@ export default function GlobalNetworkSection() {
             </div>
           </div>
 
-          {/* Right Column: Standard Image Globe */}
-          <div className="lg:w-7/12 w-full lg:-mr-24 relative flex items-center justify-center">
-            {/* 
-              Replaced the WebGL canvas with a standard image relative to your public folder.
-              Instructions: Save your image to the `public/` directory as `global-presence-globe.png`.
-            */}
+          <div className="relative flex items-center justify-center">
             <img 
               src="/global-presence-globe.png" 
               alt="Global Presence Map" 
-              className="w-full max-w-[600px] object-contain drop-shadow-2xl opacity-90 transition-transform duration-700 hover:scale-[1.02]"
+              className="w-full max-w-[720px] h-[420px] md:h-[520px] lg:h-[620px] object-cover shadow-2xl opacity-95 transition-transform duration-700 hover:scale-[1.02]"
             />
           </div>
 
