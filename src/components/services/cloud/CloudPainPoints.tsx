@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 import { DollarSign, Server, ShieldAlert, AlertCircle } from 'lucide-react';
@@ -61,9 +61,9 @@ export default function CloudPainPoints({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#22d3ee]" />
+            <span className="w-8 h-px bg-[#e01030]" />
             {sectionLabel}
           </motion.span>
 
@@ -100,23 +100,23 @@ export default function CloudPainPoints({
               className="group relative bg-[#0B0F19]/60 border border-white/5 rounded-2xl p-8 lg:p-10 backdrop-blur-md hover:bg-white/[0.03] hover:border-white/20 transition-all duration-500 overflow-hidden shadow-lg"
             >
               {/* Subtle hover glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#22d3ee]/0 to-[#4f46e5]/0 group-hover:from-[#22d3ee]/5 group-hover:to-[#4f46e5]/5 transition-colors duration-500 z-0 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#e01030]/0 to-[#4f46e5]/0 group-hover:from-[#e01030]/5 group-hover:to-[#4f46e5]/5 transition-colors duration-500 z-0 pointer-events-none" />
 
               {/* Icon */}
-              <div className="relative z-10 w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#22d3ee] group-hover:bg-[#22d3ee]/10 group-hover:border-[#22d3ee]/20 group-hover:text-white transition-all duration-500 shadow-[0_0_15px_rgba(34,211,238,0.1)] group-hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]">
+              <div className="relative z-10 w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#e01030] group-hover:bg-[#e01030]/10 group-hover:border-[#e01030]/20 group-hover:text-white transition-all duration-500 shadow-[0_0_15px_rgba(224,16,48,0.1)] group-hover:shadow-[0_0_20px_rgba(224,16,48,0.3)]">
                 {getIcon(point.icon)}
               </div>
 
               {/* Content */}
-              <h3 className="relative z-10 text-xl font-bold text-white mb-3 tracking-tight group-hover:text-[#22d3ee] transition-colors duration-300">
+              <h3 className="relative z-10 text-xl font-bold text-white mb-3 tracking-tight group-hover:text-[#e01030] transition-colors duration-300">
                 {point.title}
               </h3>
               <p className="relative z-10 text-white/60 text-sm leading-relaxed font-medium group-hover:text-white/80 transition-colors duration-300">
                 {point.desc}
               </p>
 
-              {/* Bottom accent line — appears on hover */}
-              <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#22d3ee]/0 to-transparent group-hover:via-[#22d3ee]/60 transition-all duration-700" />
+              {/* Bottom accent line â€” appears on hover */}
+              <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#e01030]/0 to-transparent group-hover:via-[#e01030]/60 transition-all duration-700" />
             </motion.div>
           ))}
         </div>
@@ -124,3 +124,4 @@ export default function CloudPainPoints({
     </motion.section>
   );
 }
+

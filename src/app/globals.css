@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -8,7 +8,7 @@
     --color-brand-red: #e01030;
     --obsidian-dark: #020617;
     --metallic-light: #f8fafc;
-    --brand-cyan: #22d3ee;
+    --brand-cyan: #e01030;
     --brand-indigo: #6366f1;
   }
 }
@@ -44,12 +44,12 @@
   }
 
   .border-glow:hover {
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
-    border-color: rgba(34, 211, 238, 0.5);
+    box-shadow: 0 0 20px rgba(224,16,48, 0.3);
+    border-color: rgba(224,16,48, 0.5);
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-[#e01030];
   }
 }
 

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Plus } from 'lucide-react';
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "What is the expected ROI, and how is it measured?",
-    answer: "Our clients average a 50x ROI within the first year. We establish strict KPIs during the Strategy phase—focusing on hours saved, operational cost reduction, and net new revenue generation. We provide live dashboards to track these metrics in real-time."
+    answer: "Our clients average a 50x ROI within the first year. We establish strict KPIs during the Strategy phaseâ€”focusing on hours saved, operational cost reduction, and net new revenue generation. We provide live dashboards to track these metrics in real-time."
   },
   {
     question: "Do we need an internal data science team to maintain this?",
@@ -75,7 +75,7 @@ export default function AIFAQ() {
               viewport={{ once: true, margin: "-100px" }}
               className="flex flex-col w-full max-w-xl mx-auto lg:mx-0"
             >
-              <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-cyan-600 block mb-1 lg:mb-2">
+              <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-red-700 block mb-1 lg:mb-2">
                 Clarity & Confidence
               </span>
               <h2 className="text-3xl md:text-[2.5rem] font-black text-slate-900 tracking-tighter mb-2 lg:mb-4 leading-[1.1]">
@@ -116,7 +116,7 @@ export default function AIFAQ() {
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ delay: idx * 0.1 }}
                   className={`bg-[#020617] rounded-xl overflow-hidden transition-all duration-500 border ${
-                    isOpen ? 'border-cyan-500/50 shadow-[0_0_20px_rgba(34,211,238,0.15)]' : 'border-slate-800 hover:border-slate-700'
+                    isOpen ? 'border-red-600/50 shadow-[0_0_20px_rgba(224,16,48,0.15)]' : 'border-slate-800 hover:border-slate-700'
                   }`}
                 >
                   <button
@@ -129,7 +129,7 @@ export default function AIFAQ() {
                     <motion.div
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className={`flex-shrink-0 rounded-full p-1 border ${isOpen ? 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400' : 'bg-slate-800 border-slate-700 text-slate-400'}`}
+                      className={`flex-shrink-0 rounded-full p-1 border ${isOpen ? 'bg-red-600/10 border-red-600/30 text-red-500' : 'bg-slate-800 border-slate-700 text-slate-400'}`}
                     >
                       <Plus className="w-3 h-3 md:w-4 md:h-4" />
                     </motion.div>
@@ -159,3 +159,4 @@ export default function AIFAQ() {
     </section>
   );
 }
+

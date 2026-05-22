@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'motion/react';
 import Image from 'next/image';
@@ -49,13 +49,13 @@ export default function DeliveryProcess() {
               <motion.span 
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className="text-[9px] font-bold tracking-[0.3em] uppercase text-cyan-600 block mb-1"
+                className="text-[9px] font-bold tracking-[0.3em] uppercase text-red-700 block mb-1"
               >
                 The Roadmap to Autonomy
               </motion.span>
               <h2 className="text-[#020617] text-3xl md:text-[2.5rem] font-black tracking-tighter mb-2 lg:mb-3 leading-[1.1]">
                 From Pilot <br />
-                <span className="text-cyan-600">to Global Production.</span>
+                <span className="text-red-700">to Global Production.</span>
               </h2>
               
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-200 mb-2 lg:mb-3 shadow-lg shrink-0">
@@ -74,7 +74,7 @@ export default function DeliveryProcess() {
                   <span className="text-xl font-black text-[#020617]">90</span>
                 </div>
                 <div>
-                  <p className="text-[8px] font-black uppercase tracking-widest text-cyan-600">Guarantee</p>
+                  <p className="text-[8px] font-black uppercase tracking-widest text-red-700">Guarantee</p>
                   <p className="text-xs font-bold text-[#020617]">Days to Live Deployment</p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function DeliveryProcess() {
               {/* Glowing Moving Light */}
               <motion.div 
                 style={{ top: glowY }}
-                className="absolute left-6 lg:left-8 w-8 h-8 -translate-x-1/2 -mt-4 bg-cyan-400 rounded-full blur-xl z-20 opacity-60"
+                className="absolute left-6 lg:left-8 w-8 h-8 -translate-x-1/2 -mt-4 bg-red-500 rounded-full blur-xl z-20 opacity-60"
               />
 
               <div className="space-y-16 lg:space-y-32">
@@ -111,14 +111,14 @@ export default function DeliveryProcess() {
                   >
                     {/* Step Marker */}
                     <div className="relative z-30 flex-shrink-0 mt-4 interactive">
-                      <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 shadow-xl flex items-center justify-center group-hover:border-cyan-400 transition-colors duration-500 overflow-hidden">
-                        <span className="text-lg font-black text-[#020617] group-hover:text-cyan-600 transition-colors">0{idx + 1}</span>
+                      <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 shadow-xl flex items-center justify-center group-hover:border-red-500 transition-colors duration-500 overflow-hidden">
+                        <span className="text-lg font-black text-[#020617] group-hover:text-red-700 transition-colors">0{idx + 1}</span>
                       </div>
                     </div>
 
                     {/* Content Card */}
                     <div className="glass-card-light p-8 lg:p-10 rounded-[2rem] lg:rounded-[32px] border-glow flex-1 interactive bg-white/50 backdrop-blur-xl">
-                      <h3 className="text-[#020617] text-xl lg:text-2xl font-black mb-4 lg:mb-6 tracking-tight uppercase group-hover:text-cyan-600 transition-colors">
+                      <h3 className="text-[#020617] text-xl lg:text-2xl font-black mb-4 lg:mb-6 tracking-tight uppercase group-hover:text-red-700 transition-colors">
                         {step.title}
                       </h3>
                       <p className="text-slate-600 font-medium leading-relaxed text-base lg:text-lg">
@@ -136,3 +136,4 @@ export default function DeliveryProcess() {
     </section>
   );
 }
+

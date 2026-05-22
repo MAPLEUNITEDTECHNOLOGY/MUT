@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { motion } from 'motion/react';
@@ -15,12 +15,12 @@ import CloudProcess from '@/components/services/cloud/CloudProcess';
 import CloudFAQ from '@/components/services/cloud/CloudFAQ';
 import CloudCTABottom from '@/components/services/cloud/CloudCTABottom';
 
-// ═══ PAGE ASSEMBLY ═══
+// â•â•â• PAGE ASSEMBLY â•â•â•
 export default function CloudInfrastructurePage() {
   return (
-    <div className="relative bg-white selection:bg-cyan-500/30">
+    <div className="relative bg-white selection:bg-red-600/30">
       <main className="relative">
-        {/* ── Dark: Hero ── */}
+        {/* â”€â”€ Dark: Hero â”€â”€ */}
         <CloudHero
           headline={cloudInfrastructureData.hero.headline}
           subline={cloudInfrastructureData.hero.subline}
@@ -31,10 +31,10 @@ export default function CloudInfrastructurePage() {
           socialProof={cloudInfrastructureData.hero.socialProof}
         />
 
-        {/* ── Light: Trust Stats ── */}
+        {/* â”€â”€ Light: Trust Stats â”€â”€ */}
         <CloudTrustStats stats={cloudInfrastructureData.stats} />
 
-        {/* ── Dark: Pain Points ── */}
+        {/* â”€â”€ Dark: Pain Points â”€â”€ */}
         <CloudPainPoints
           sectionLabel={cloudInfrastructureData.painPoints.sectionLabel}
           headline={cloudInfrastructureData.painPoints.headline}
@@ -42,17 +42,17 @@ export default function CloudInfrastructurePage() {
           points={cloudInfrastructureData.painPoints.points}
         />
 
-        {/* ── Dark: Services Grid ── */}
+        {/* â”€â”€ Dark: Services Grid â”€â”€ */}
         <CloudServicesGrid services={cloudInfrastructureData.services} />
 
-        {/* ── Light: Process Timeline ── */}
+        {/* â”€â”€ Light: Process Timeline â”€â”€ */}
         <CloudProcess
           sectionLabel={cloudInfrastructureData.process.sectionLabel}
           headline={cloudInfrastructureData.process.headline}
           steps={cloudInfrastructureData.process.steps}
         />
 
-        {/* ── Dark: Case Study ── */}
+        {/* â”€â”€ Dark: Case Study â”€â”€ */}
         <CloudCaseStudy
           label={cloudInfrastructureData.caseStudy.label}
           headline={cloudInfrastructureData.caseStudy.headline}
@@ -64,25 +64,26 @@ export default function CloudInfrastructurePage() {
           testimonial={cloudInfrastructureData.caseStudy.testimonial}
         />
 
-        {/* ── Light: Tech Stack ── */}
+        {/* â”€â”€ Light: Tech Stack â”€â”€ */}
         <CloudTechStack techStack={cloudInfrastructureData.techStack} />
 
-        {/* ── Dark: Why Us ── */}
+        {/* â”€â”€ Dark: Why Us â”€â”€ */}
         <CloudWhyUs
           sectionLabel={cloudInfrastructureData.whyUs.sectionLabel}
           headline={cloudInfrastructureData.whyUs.headline}
           differentiators={cloudInfrastructureData.whyUs.differentiators}
         />
 
-        {/* ── Light: Testimonial ── */}
+        {/* â”€â”€ Light: Testimonial â”€â”€ */}
         <CloudTestimonial testimonial={cloudInfrastructureData.testimonial} />
 
-        {/* ── Light: FAQ ── */}
+        {/* â”€â”€ Light: FAQ â”€â”€ */}
         <CloudFAQ faqs={cloudInfrastructureData.faqs} />
 
-        {/* ── Dark: CTA Footer ── */}
+        {/* â”€â”€ Dark: CTA Footer â”€â”€ */}
         <CloudCTABottom cta={cloudInfrastructureData.ctaFooter} />
       </main>
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -26,9 +26,9 @@ function ServiceCard({ service, index }: { service: ServiceItem; index: number }
       variants={{
         hover: { y: -8, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } }
       }}
-      className="group relative bg-[#0B0F19] liquid-glass border border-white/10 rounded-[2.5rem] overflow-hidden flex flex-col cursor-pointer shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-cyan-400/40 hover:shadow-[0_20px_60px_-15px_rgba(34,211,238,0.15)] isolate"
+      className="group relative bg-[#0B0F19] liquid-glass border border-white/10 rounded-[2.5rem] overflow-hidden flex flex-col cursor-pointer shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-red-500/40 hover:shadow-[0_20px_60px_-15px_rgba(224,16,48,0.15)] isolate"
     >
-      {/* ── Image area: fixed 240px ── */}
+      {/* â”€â”€ Image area: fixed 240px â”€â”€ */}
       <div className="relative w-full h-[240px] overflow-hidden shrink-0 z-10">
         <motion.img
           src={service.imageSrc}
@@ -40,38 +40,38 @@ function ServiceCard({ service, index }: { service: ServiceItem; index: number }
           }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         />
-        {/* Gradient overlay — darkens bottom, tint appears on hover */}
+        {/* Gradient overlay â€” darkens bottom, tint appears on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/40 to-transparent pointer-events-none" />
         <motion.div 
           className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-indigo-500/10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         />
 
-        {/* Tag badge — AI Page Style */}
+        {/* Tag badge â€” AI Page Style */}
         {service.tag && (
           <motion.div 
             className="absolute top-6 left-6 z-20"
             variants={{ hover: { y: -2, x: 2 } }}
             transition={{ duration: 0.4, ease: "easeOut" }}
           >
-            <div className="text-[10px] font-black uppercase tracking-[0.2em] text-cyan-400 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20 backdrop-blur-md">
+            <div className="text-[10px] font-black uppercase tracking-[0.2em] text-red-500 bg-red-500/10 px-4 py-2 rounded-full border border-red-500/20 backdrop-blur-md">
               {service.tag}
             </div>
           </motion.div>
         )}
       </div>
 
-      {/* ── Content ── */}
+      {/* â”€â”€ Content â”€â”€ */}
       <div className="p-6 lg:p-8 flex flex-col flex-1 z-10 relative">
-        <h3 className="text-xl md:text-2xl font-black text-white mb-4 leading-[1.1] tracking-tight group-hover:text-cyan-400 transition-colors duration-300">
+        <h3 className="text-xl md:text-2xl font-black text-white mb-4 leading-[1.1] tracking-tight group-hover:text-red-500 transition-colors duration-300">
           {service.title}
         </h3>
         <p className="text-slate-400 text-sm leading-relaxed font-medium flex-1 group-hover:text-slate-300 transition-colors duration-300">
           {service.desc}
         </p>
 
-        {/* Arrow link — AI Page Button Style */}
+        {/* Arrow link â€” AI Page Button Style */}
         <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-6">
-          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/40 group-hover:text-cyan-400 transition-colors duration-300">
+          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/40 group-hover:text-red-500 transition-colors duration-300">
             Explore Details
           </span>
           
@@ -103,9 +103,9 @@ export default function CloudServicesGrid({ services }: CloudServicesGridProps) 
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#22d3ee]/60" />
+            <span className="w-8 h-px bg-[#e01030]/60" />
             Enterprise Cloud Capabilities
           </motion.span>
 
@@ -117,7 +117,7 @@ export default function CloudServicesGrid({ services }: CloudServicesGridProps) 
             className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6"
           >
             End-to-End Cloud Services.{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-[#e01030]">
               One Partner.
             </span>
           </motion.h2>
@@ -129,12 +129,12 @@ export default function CloudServicesGrid({ services }: CloudServicesGridProps) 
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-white/40 leading-relaxed font-medium max-w-2xl"
           >
-            From strategy to 24/7 operations — every capability you need to build, migrate,
+            From strategy to 24/7 operations â€” every capability you need to build, migrate,
             secure, and optimize your cloud environment.
           </motion.p>
         </div>
 
-        {/* Services grid — 4 cols on lg+, 2 on md, 1 on mobile */}
+        {/* Services grid â€” 4 cols on lg+, 2 on md, 1 on mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, idx) => (
             <Link key={service.title} href="/contact?service=cloud" className="block">
@@ -146,3 +146,4 @@ export default function CloudServicesGrid({ services }: CloudServicesGridProps) 
     </section>
   );
 }
+

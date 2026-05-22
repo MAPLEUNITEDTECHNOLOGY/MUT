@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'motion/react';
@@ -34,7 +34,7 @@ export default function CloudCTABottom({ cta }: CloudCTABottomProps) {
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-[#020617]/80 to-[#020617]" />
       <div className="absolute top-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#e01030]/8 rounded-full blur-[80px] md:blur-[180px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#22d3ee]/5 rounded-full blur-[80px] md:blur-[180px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#e01030]/5 rounded-full blur-[80px] md:blur-[180px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-24 md:py-32 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -44,11 +44,11 @@ export default function CloudCTABottom({ cta }: CloudCTABottomProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-6"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-6"
           >
-            <span className="w-8 h-px bg-[#22d3ee]/60" />
+            <span className="w-8 h-px bg-[#e01030]/60" />
             Start Your Cloud Journey
-            <span className="w-8 h-px bg-[#22d3ee]/60" />
+            <span className="w-8 h-px bg-[#e01030]/60" />
           </motion.span>
 
           {/* Headline */}
@@ -114,3 +114,4 @@ export default function CloudCTABottom({ cta }: CloudCTABottomProps) {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 
@@ -62,9 +62,9 @@ export default function CloudCaseStudy({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#22d3ee]" />
+            <span className="w-8 h-px bg-[#e01030]" />
             {label}
           </motion.span>
 
@@ -99,7 +99,7 @@ export default function CloudCaseStudy({
             transition={{ duration: 0.6, delay: 0.25 }}
             className="bg-white/[0.02] border border-white/[0.05] rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:bg-white/[0.03] hover:border-white/10 transition-colors duration-300"
           >
-            <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#22d3ee]/70 mb-4 block">
+            <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#e01030]/70 mb-4 block">
               The Challenge
             </span>
             <p className="text-white/50 text-[15px] leading-relaxed font-medium">
@@ -112,9 +112,9 @@ export default function CloudCaseStudy({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="bg-[#22d3ee]/[0.03] border border-[#22d3ee]/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm shadow-[0_0_30px_rgba(34,211,238,0.05)] hover:bg-[#22d3ee]/[0.05] hover:border-[#22d3ee]/30 transition-all duration-300"
+            className="bg-[#e01030]/[0.03] border border-[#e01030]/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm shadow-[0_0_30px_rgba(224,16,48,0.05)] hover:bg-[#e01030]/[0.05] hover:border-[#e01030]/30 transition-all duration-300"
           >
-            <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#22d3ee] mb-4 block">
+            <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#e01030] mb-4 block">
               Our Solution
             </span>
             <p className="text-white/70 text-[15px] leading-relaxed font-medium">
@@ -134,7 +134,7 @@ export default function CloudCaseStudy({
               transition={{ duration: 0.5, delay: 0.4 + idx * 0.1 }}
               className="flex flex-col items-center text-center bg-white/[0.02] border border-white/[0.05] rounded-2xl p-8 backdrop-blur-sm shadow-lg hover:bg-white/[0.04] transition-colors duration-300"
             >
-              <span className="text-4xl md:text-5xl font-black text-[#22d3ee] tracking-tighter mb-2 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">
+              <span className="text-4xl md:text-5xl font-black text-[#e01030] tracking-tighter mb-2 drop-shadow-[0_0_10px_rgba(224,16,48,0.3)]">
                 {item.metric}
               </span>
               <span className="text-white/50 text-[11px] font-bold tracking-[0.15em] uppercase">
@@ -150,18 +150,18 @@ export default function CloudCaseStudy({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="relative border-l-2 border-[#22d3ee] pl-8 md:pl-10 max-w-3xl"
+          className="relative border-l-2 border-[#e01030] pl-8 md:pl-10 max-w-3xl"
         >
           <p className="text-white/80 text-lg md:text-xl leading-relaxed font-medium italic mb-6">
             &ldquo;{testimonial.quote}&rdquo;
           </p>
           <footer className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#22d3ee]/20 to-[#4f46e5]/20 border border-[#22d3ee]/30 flex items-center justify-center text-[#22d3ee] text-sm font-black shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#e01030]/20 to-[#4f46e5]/20 border border-[#e01030]/30 flex items-center justify-center text-[#e01030] text-sm font-black shadow-[0_0_15px_rgba(224,16,48,0.2)]">
               {testimonial.name.charAt(0)}
             </div>
             <div>
               <span className="block text-white text-sm font-bold">{testimonial.name}</span>
-              <span className="block text-[#22d3ee]/60 text-xs font-medium">
+              <span className="block text-[#e01030]/60 text-xs font-medium">
                 {testimonial.role}, {testimonial.company}
               </span>
             </div>
@@ -171,3 +171,4 @@ export default function CloudCaseStudy({
     </motion.section>
   );
 }
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 
@@ -30,7 +30,7 @@ export default function CloudWhyUs({
     >
       {/* Background glow orbs */}
       <div className="absolute top-0 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#e01030]/5 rounded-full blur-[80px] md:blur-[150px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#22d3ee]/3 rounded-full blur-[80px] md:blur-[150px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#e01030]/3 rounded-full blur-[80px] md:blur-[150px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-24 md:py-32 relative z-10">
         {/* Section header */}
@@ -40,9 +40,9 @@ export default function CloudWhyUs({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#22d3ee]/60" />
+            <span className="w-8 h-px bg-[#e01030]/60" />
             {sectionLabel}
           </motion.span>
 
@@ -57,7 +57,7 @@ export default function CloudWhyUs({
           </motion.h2>
         </div>
 
-        {/* Differentiator cards — 2x2 grid */}
+        {/* Differentiator cards â€” 2x2 grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {differentiators.map((diff, idx) => (
             <motion.div
@@ -76,10 +76,10 @@ export default function CloudWhyUs({
 
               {/* Stat */}
               <div className="flex items-baseline gap-1.5 mb-4">
-                <span className="text-3xl md:text-4xl lg:text-5xl font-black text-[#22d3ee] tracking-tighter">
+                <span className="text-3xl md:text-4xl lg:text-5xl font-black text-[#e01030] tracking-tighter">
                   {diff.stat}
                 </span>
-                <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#22d3ee]/50">
+                <span className="text-[10px] font-black tracking-[0.2em] uppercase text-[#e01030]/50">
                   {diff.statLabel}
                 </span>
               </div>
@@ -95,7 +95,7 @@ export default function CloudWhyUs({
               </p>
 
               {/* Hover accent line */}
-              <div className="mt-6 w-0 group-hover:w-16 h-px bg-gradient-to-r from-[#22d3ee] to-transparent transition-all duration-500" />
+              <div className="mt-6 w-0 group-hover:w-16 h-px bg-gradient-to-r from-[#e01030] to-transparent transition-all duration-500" />
             </motion.div>
           ))}
         </div>
@@ -103,3 +103,4 @@ export default function CloudWhyUs({
     </motion.section>
   );
 }
+

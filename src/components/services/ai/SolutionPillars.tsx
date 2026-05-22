@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useRef, useState, useCallback } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'motion/react';
 import Image from 'next/image';
@@ -12,7 +12,7 @@ const solutions = [
     resolution: "Cognitive AI engines that handle judgment-based tasks at hyper-scale.",
     roi: "40% OPEX Reduction",
     features: ["Judgment-based task handling", "Hyper-scale operations", "Cognitive engine integration"],
-    icon: <Zap className="w-6 h-6 text-cyan-400" />
+    icon: <Zap className="w-6 h-6 text-red-500" />
   },
   {
     title: "Conversational AI & Virtual Assistants",
@@ -21,7 +21,7 @@ const solutions = [
     resolution: "Hyper-contextual agents resolving 65%+ of enterprise queries autonomously.",
     roi: "3.5x CX Velocity",
     features: ["Hyper-contextual responses", "Multi-channel resolution", "65%+ autonomous handling"],
-    icon: <Target className="w-6 h-6 text-indigo-400" />
+    icon: <Target className="w-6 h-6 text-red-500" />
   },
   {
     title: "Enterprise Workflow Automation",
@@ -83,9 +83,9 @@ export default function SolutionPillars() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 text-cyan-600 font-bold uppercase tracking-[0.3em] text-xs mb-6"
+            className="inline-flex items-center gap-2 text-red-700 font-bold uppercase tracking-[0.3em] text-xs mb-6"
           >
-            <span className="w-8 h-[1px] bg-cyan-600" />
+            <span className="w-8 h-[1px] bg-red-700" />
             Our Capabilities
           </motion.span>
           <motion.h2
@@ -95,7 +95,7 @@ export default function SolutionPillars() {
             className="text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tighter leading-[0.95]"
           >
             Architecting specialized <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-indigo-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-[#b00c25]">
               intelligence layers.
             </span>
           </motion.h2>
@@ -111,7 +111,7 @@ export default function SolutionPillars() {
               ))}
               {/* Animated Pill */}
               <motion.div 
-                className="absolute top-0 left-0 w-2 h-10 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]"
+                className="absolute top-0 left-0 w-2 h-10 rounded-full bg-red-600 shadow-[0_0_15px_rgba(224,16,48,0.5)]"
                 animate={{ y: activeCard * 64 }} // 40px (h-10) + 24px (gap-6) = 64px
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               />
@@ -204,7 +204,7 @@ const SolutionCard = React.memo(({ item, index, total, onActive }: { item: any, 
               <div className="p-3 bg-white/5 rounded-2xl border border-white/10 shadow-inner">
                 {item.icon}
               </div>
-              <span className="text-xs font-black uppercase tracking-[0.2em] text-cyan-400 bg-cyan-400/10 px-4 py-2 rounded-full border border-cyan-400/20">
+              <span className="text-xs font-black uppercase tracking-[0.2em] text-red-500 bg-red-500/10 px-4 py-2 rounded-full border border-red-500/20">
                 {item.roi}
               </span>
             </div>
@@ -222,7 +222,7 @@ const SolutionCard = React.memo(({ item, index, total, onActive }: { item: any, 
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-cyan-400">The Resolution</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-red-500">The Resolution</span>
                   <p className="text-white text-sm leading-relaxed font-bold">
                     {item.resolution}
                   </p>
@@ -233,7 +233,7 @@ const SolutionCard = React.memo(({ item, index, total, onActive }: { item: any, 
               <div className="pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {item.features.map((feature: string, fIdx: number) => (
                   <div key={fIdx} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-500 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-red-600 flex-shrink-0" />
                     <span className="text-sm text-slate-300 font-medium">{feature}</span>
                   </div>
                 ))}
@@ -259,3 +259,4 @@ const SolutionCard = React.memo(({ item, index, total, onActive }: { item: any, 
 });
 
 SolutionCard.displayName = "SolutionCard";
+

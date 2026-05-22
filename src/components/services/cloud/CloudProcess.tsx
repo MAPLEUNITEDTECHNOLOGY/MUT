@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 
@@ -36,9 +36,9 @@ export default function CloudProcess({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 text-[#22d3ee] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-[#e01030] text-[10px] font-black tracking-[0.25em] uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#22d3ee]/60" />
+            <span className="w-8 h-px bg-[#e01030]/60" />
             {sectionLabel}
           </motion.span>
 
@@ -71,8 +71,8 @@ export default function CloudProcess({
                   className="relative pl-14 md:pl-20 group"
                 >
                   {/* Number circle on the timeline */}
-                  <div className="absolute left-0 md:left-[5px] top-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0B0F19] border-2 border-white/20 flex items-center justify-center z-10 group-hover:border-[#22d3ee] transition-colors duration-500 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]">
-                    <span className="text-[#22d3ee] text-xs md:text-sm font-black">
+                  <div className="absolute left-0 md:left-[5px] top-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0B0F19] border-2 border-white/20 flex items-center justify-center z-10 group-hover:border-[#e01030] transition-colors duration-500 shadow-[0_0_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_20px_rgba(224,16,48,0.3)]">
+                    <span className="text-[#e01030] text-xs md:text-sm font-black">
                       {step.number}
                     </span>
                   </div>
@@ -81,7 +81,7 @@ export default function CloudProcess({
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     {/* Text */}
                     <div className={`lg:col-span-7 ${!isEven ? 'lg:order-2' : ''}`}>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3 group-hover:text-[#22d3ee] transition-colors duration-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3 group-hover:text-[#e01030] transition-colors duration-300">
                         {step.title}
                       </h3>
                       <p className="text-white/60 text-[15px] leading-relaxed font-medium max-w-lg">
@@ -116,3 +116,4 @@ export default function CloudProcess({
     </motion.section>
   );
 }
+

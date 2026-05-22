@@ -1,9 +1,9 @@
-/* AI Test Page Theme - Reverting to Original Branding */
+﻿/* AI Test Page Theme - Reverting to Original Branding */
 
 :root {
   --color-obsidian: #020617;
   --color-metallic: #f8fafc;
-  --color-cyan-accent: #00E5FF;
+  --color-cyan-accent: #e01030;
   --color-cyan-deep: #0891b2;
 }
 
@@ -28,7 +28,7 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(224,16,48, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -51,10 +51,11 @@
 }
 
 @keyframes pulse-cyan {
-  0%, 100% { box-shadow: 0 0 20px rgba(0, 229, 255, 0.2); }
-  50% { box-shadow: 0 0 40px rgba(0, 229, 255, 0.4); }
+  0%, 100% { box-shadow: 0 0 20px rgba(224,16,48, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(224,16,48, 0.4); }
 }
 
 .glow-cyan {
   animation: pulse-cyan 4s ease-in-out infinite;
 }
+

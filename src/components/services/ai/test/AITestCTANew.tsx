@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React from 'react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -16,12 +16,12 @@ export default function AITestCTANew() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <span className="text-cyan-600 text-[11px] font-black uppercase tracking-[0.5em] mb-10">
+          <span className="text-red-700 text-[11px] font-black uppercase tracking-[0.5em] mb-10">
             Next Evolution
           </span>
           <h2 className="text-[#020617] text-5xl md:text-8xl font-black tracking-[calc(-0.04em)] leading-[0.8] mb-16 uppercase">
             Initialize <br />
-            <span className="text-cyan-600">Transformation</span>
+            <span className="text-red-700">Transformation</span>
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-8 items-center">
@@ -48,3 +48,4 @@ export default function AITestCTANew() {
     </section>
   );
 }
+

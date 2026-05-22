@@ -16,7 +16,7 @@ const FinalCTA = dynamic(() => import('@/components/services/ai/FinalCTA'), { ss
 
 export default function AITransformationPage() {
   return (
-    <div className="relative bg-white selection:bg-cyan-500/30">
+    <div className="relative bg-white selection:bg-red-600/30">
       {/* Premium Cursor for heightened interactivity */}
       <CustomCursor />
 

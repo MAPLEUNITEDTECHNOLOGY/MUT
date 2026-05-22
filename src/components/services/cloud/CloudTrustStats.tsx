@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 
@@ -63,9 +63,9 @@ function AnimatedCounter({ value, suffix, label }: Stat) {
         <span className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
           {displayValue}
         </span>
-        <span className="text-3xl md:text-4xl lg:text-5xl font-black text-[#22d3ee] ml-1 tabular-nums drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">{suffix}</span>
+        <span className="text-3xl md:text-4xl lg:text-5xl font-black text-[#e01030] ml-1 tabular-nums drop-shadow-[0_0_10px_rgba(224,16,48,0.5)]">{suffix}</span>
       </div>
-      <span className="text-[11px] md:text-xs font-bold text-[#22d3ee]/80 uppercase tracking-[0.2em] mt-3">
+      <span className="text-[11px] md:text-xs font-bold text-[#e01030]/80 uppercase tracking-[0.2em] mt-3">
         {label}
       </span>
     </div>
@@ -83,7 +83,7 @@ export default function CloudTrustStats({ stats }: CloudTrustStatsProps) {
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-20 md:py-28 relative">
         {/* Subtle glowing accents */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#22d3ee]/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#e01030]/5 rounded-full blur-[120px] pointer-events-none" />
 
         {/* Section eyebrow */}
         <motion.div
@@ -93,10 +93,10 @@ export default function CloudTrustStats({ stats }: CloudTrustStatsProps) {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center text-center mb-16 relative z-10"
         >
-          <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#22d3ee] mb-3 flex items-center gap-2">
-            <span className="w-6 h-px bg-[#22d3ee]/60" />
+          <span className="text-[10px] font-black tracking-[0.25em] uppercase text-[#e01030] mb-3 flex items-center gap-2">
+            <span className="w-6 h-px bg-[#e01030]/60" />
             Trusted by Enterprise Leaders
-            <span className="w-6 h-px bg-[#22d3ee]/60" />
+            <span className="w-6 h-px bg-[#e01030]/60" />
           </span>
         </motion.div>
 
@@ -118,3 +118,4 @@ export default function CloudTrustStats({ stats }: CloudTrustStatsProps) {
     </motion.section>
   );
 }
+

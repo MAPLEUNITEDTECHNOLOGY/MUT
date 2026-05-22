@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { motion } from 'motion/react';
 
 const stats = [
@@ -28,7 +28,7 @@ export default function StatsTicker() {
        >
           {[...stats, ...stats].map((stat, idx) => (
              <div key={idx} className="flex items-baseline gap-3 whitespace-nowrap">
-                <span className="text-2xl md:text-3xl font-black text-cyan-400 tracking-tighter">{stat.value}</span>
+                <span className="text-2xl md:text-3xl font-black text-red-500 tracking-tighter">{stat.value}</span>
                 <span className="text-sm md:text-base font-medium text-slate-400 uppercase tracking-widest">{stat.label}</span>
              </div>
           ))}
@@ -36,3 +36,4 @@ export default function StatsTicker() {
     </div>
   );
 }
+

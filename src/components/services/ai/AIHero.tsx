@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Link from 'next/link';
@@ -37,13 +37,13 @@ export default function AIHero() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex items-center gap-3 text-[#00E5FF] text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] mb-2"
+            className="flex items-center gap-3 text-[#e01030] text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] mb-2"
           >
             <Link href="/" className="hover:text-white transition-colors">HOME</Link>
-            <span className="text-[#00E5FF]/40">/</span>
+            <span className="text-[#e01030]/40">/</span>
             <Link href="/services" className="hover:text-white transition-colors">SERVICES</Link>
-            <span className="text-[#00E5FF]/40">/</span>
-            <span className="text-[#00E5FF]">AI & AUTOMATION</span>
+            <span className="text-[#e01030]/40">/</span>
+            <span className="text-[#e01030]">AI & AUTOMATION</span>
           </motion.div>
 
           {/* 2. Feature Tag */}
@@ -53,7 +53,7 @@ export default function AIHero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="flex items-center gap-3 bg-[#0a1128]/40 border border-white/5 rounded-full px-5 py-2 backdrop-blur-sm">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] shadow-[0_0_8px_rgba(0,229,255,0.8)]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#e01030] shadow-[0_0_8px_rgba(224,16,48,0.8)]" />
               <span className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase text-slate-300">
                 ENTERPRISE AI & TRANSFORMATION
               </span>
@@ -94,7 +94,7 @@ export default function AIHero() {
             
             <div className="flex flex-col items-start justify-center bg-[#050b1a]/80 border border-white/5 px-6 py-3.5 rounded-md backdrop-blur-sm">
                <span className="text-white font-bold text-[14px] tracking-tight">50+ Global Implementations</span>
-               <span className="text-[#00E5FF] font-black uppercase tracking-widest mt-1 text-[10px]">ENTERPRISE GRADE</span>
+               <span className="text-[#e01030] font-black uppercase tracking-widest mt-1 text-[10px]">ENTERPRISE GRADE</span>
             </div>
           </motion.div>
 
@@ -106,3 +106,4 @@ export default function AIHero() {
     </section>
   );
 }
+

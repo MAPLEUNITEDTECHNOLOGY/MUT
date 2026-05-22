@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import Link from 'next/link';
 import { GridPattern } from '@/components/ui/GridPattern';
@@ -57,7 +57,7 @@ export default function FinalCTA() {
        {/* Dynamic Background Orb */}
        <motion.div 
          style={{ x: orbX, y: orbY }}
-         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/20 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"
+         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/20 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"
        />
        
        <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 text-center">
@@ -68,7 +68,7 @@ export default function FinalCTA() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-5xl mx-auto"
           >
-            <span className="inline-block py-2 px-6 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-[11px] font-black tracking-[0.4em] uppercase text-cyan-400 mb-10 shadow-[0_0_20px_rgba(34,211,238,0.1)]">
+            <span className="inline-block py-2 px-6 rounded-full border border-red-600/30 bg-red-600/10 text-[11px] font-black tracking-[0.4em] uppercase text-red-500 mb-10 shadow-[0_0_20px_rgba(224,16,48,0.1)]">
               Ready to Scale?
             </span>
             <h2 className="text-white text-5xl md:text-7xl font-black tracking-tighter mb-10 leading-[1.1] uppercase">
@@ -87,10 +87,10 @@ export default function FinalCTA() {
               >
                 <motion.div
                   style={{ x: mouseXSpring, y: mouseYSpring }}
-                  className="bg-white text-black px-16 py-6 md:px-20 md:py-8 rounded-full text-[13px] md:text-[15px] font-black tracking-[0.2em] uppercase transition-all shadow-[0_0_40px_rgba(255,255,255,0.15)] group-hover:shadow-[0_0_80px_rgba(34,211,238,0.4)] flex items-center justify-center gap-4"
+                  className="bg-white text-black px-16 py-6 md:px-20 md:py-8 rounded-full text-[13px] md:text-[15px] font-black tracking-[0.2em] uppercase transition-all shadow-[0_0_40px_rgba(255,255,255,0.15)] group-hover:shadow-[0_0_80px_rgba(224,16,48,0.4)] flex items-center justify-center gap-4"
                 >
-                  <span className="relative z-10 group-hover:text-cyan-600 transition-colors">Start the Strategy</span>
-                  <svg className="w-5 h-5 text-black group-hover:text-cyan-600 transition-colors transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <span className="relative z-10 group-hover:text-red-700 transition-colors">Start the Strategy</span>
+                  <svg className="w-5 h-5 text-black group-hover:text-red-700 transition-colors transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </motion.div>
@@ -101,7 +101,7 @@ export default function FinalCTA() {
               
               <div className="flex items-center gap-4">
                 <div className="w-8 md:w-12 h-[1px] bg-gradient-to-r from-transparent to-white/30" />
-                <p className="text-cyan-400 text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em]">
+                <p className="text-red-500 text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em]">
                   Limited Availability for Q3
                 </p>
                 <div className="w-8 md:w-12 h-[1px] bg-gradient-to-l from-transparent to-white/30" />

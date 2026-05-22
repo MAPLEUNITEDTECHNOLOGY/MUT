@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, animate } from 'motion/react';
 
@@ -39,11 +39,11 @@ function PremiumSlider({ label, value, min, max, onChange, prefix = "", suffix =
       </div>
       <div className="relative h-2 bg-white/10 rounded-full group cursor-pointer">
         <div
-          className="absolute top-0 left-0 h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 h-full bg-gradient-to-r from-red-400 to-[#e01030] rounded-full transition-all duration-150 ease-out"
           style={{ width: `${percentage}%` }}
         />
         <div
-          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-[0_0_10px_rgba(34,211,238,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-[0_0_10px_rgba(224,16,48,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
           style={{ left: `calc(${percentage}% - 8px)` }}
         />
         <input
@@ -137,14 +137,14 @@ export default function ROICalculator() {
       >
         {/* Decorative Background Elements */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none -translate-x-1/2 translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-600/10 blur-[120px] rounded-full pointer-events-none -translate-x-1/2 translate-y-1/2" />
 
         <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 h-full max-h-[90vh] items-center z-10">
 
           {/* Left: Inputs */}
           <div className="lg:col-span-5 flex flex-col justify-center h-full space-y-10">
             <div>
-              <span className="text-[11px] font-black uppercase tracking-[0.4em] text-cyan-400 mb-4 block">Interactive Model</span>
+              <span className="text-[11px] font-black uppercase tracking-[0.4em] text-red-500 mb-4 block">Interactive Model</span>
               <h2 className="text-4xl md:text-5xl font-black tracking-tighter leading-tight">
                 Calculate Your <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">True Upside.</span>
@@ -207,7 +207,7 @@ export default function ROICalculator() {
               <div className="w-full relative border-t border-white/10 pt-8 mt-4">
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">12-Month Trajectory</span>
-                  <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-widest bg-cyan-400/10 px-3 py-1 rounded-full">Breakeven Analysis</span>
+                  <span className="text-[10px] text-red-500 font-bold uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full">Breakeven Analysis</span>
                 </div>
 
                 <div className="h-48 w-full relative">
@@ -266,3 +266,4 @@ export default function ROICalculator() {
     </section>
   );
 }
+
