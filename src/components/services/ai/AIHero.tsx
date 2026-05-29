@@ -48,6 +48,7 @@ export default function AIHero() {
 
           {/* 2. Feature Tag */}
           <motion.div
+            className="mt-16"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
