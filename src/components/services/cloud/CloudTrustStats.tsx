@@ -60,7 +60,7 @@ function AnimatedCounter({ value, suffix, label }: Stat) {
   return (
     <div ref={ref} className="flex flex-col items-center text-center p-6 bg-white/[0.02] border border-white/5 rounded-2xl backdrop-blur-sm shadow-[0_4px_24px_rgba(0,0,0,0.2)] hover:bg-white/[0.04] transition-colors duration-300">
       <div className="flex items-baseline">
-        <span className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+        <span className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
           {displayValue}
         </span>
         <span className="text-3xl md:text-4xl lg:text-5xl font-black text-[#e01030] ml-1 tabular-nums drop-shadow-[0_0_10px_rgba(224,16,48,0.5)]">{suffix}</span>
