@@ -98,7 +98,7 @@ export default function CloudHero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[42px] md:text-6xl lg:text-[68px] font-black text-white tracking-tight leading-[1.03] mb-6 hero-text-shadow max-w-3xl"
+            className="text-[42px] md:text-[60px] lg:text-[66px] font-black text-white tracking-tight leading-[1.03] mb-6 hero-text-shadow max-w-3xl"
           >
             {headline}
           </motion.h1>
