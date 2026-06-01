@@ -42,7 +42,7 @@ export default function ManagedHero({ headline, subline, imageSrc, imageAlt, bad
         </div>
 
         <div className="flex flex-col items-start text-left max-w-4xl w-full mt-auto">
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }} className="text-[42px] md:text-6xl lg:text-[68px] font-black text-white tracking-tight leading-[1.03] mb-6 hero-text-shadow max-w-3xl">
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }}className="text-[38px] md:text-[52px] lg:text-[60px] font-black text-white tracking-tight leading-[1.03] mb-6 hero-text-shadow max-w-3xl">
             {headline}
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.45 }} className="text-white text-lg md:text-xl lg:text-[22px] font-normal leading-relaxed mb-10 max-w-2xl drop-shadow-xl">
