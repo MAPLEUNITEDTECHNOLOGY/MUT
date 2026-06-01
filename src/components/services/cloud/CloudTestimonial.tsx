@@ -15,6 +15,7 @@ interface CloudTestimonialProps {
 }
 
 export default function CloudTestimonial({ testimonial }: CloudTestimonialProps) {
+ return null;
   return (
     <motion.section 
       initial={{ y: 40, opacity: 0 }}
