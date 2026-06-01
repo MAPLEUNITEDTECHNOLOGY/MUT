@@ -37,7 +37,7 @@ export default function ManagedHero({ headline, subline, imageSrc, imageAlt, bad
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-6"
+            className="mt-9"
             >
             <div className="flex items-center gap-3 bg-[#0a1128]/40 border border-white/5 rounded-full px-5 py-2 backdrop-blur-sm">
               <div className="w-1.5 h-1.5 rounded-full bg-[#e01030] shadow-[0_0_8px_rgba(224,16,48,0.8)]" />
