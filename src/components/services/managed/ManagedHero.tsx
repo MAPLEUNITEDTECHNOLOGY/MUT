@@ -33,7 +33,12 @@ export default function ManagedHero({ headline, subline, imageSrc, imageAlt, bad
             <span className="text-[#e01030]/40">/</span>
             <span className="text-[#e01030]">MANAGED IT SERVICES</span>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mt-6"
+            >
             <div className="flex items-center gap-3 bg-[#0a1128]/40 border border-white/5 rounded-full px-5 py-2 backdrop-blur-sm">
               <div className="w-1.5 h-1.5 rounded-full bg-[#e01030] shadow-[0_0_8px_rgba(224,16,48,0.8)]" />
               <span className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase text-slate-300">{badge}</span>
