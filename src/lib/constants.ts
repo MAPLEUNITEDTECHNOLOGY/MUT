@@ -13,7 +13,6 @@ export const NAV_SERVICES = [
   { label: 'Network Architecture', href: '/services/network-architecture', icon: 'Network', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80', desc: 'Enterprise connectivity and SD-WAN' },
   { label: 'Cybersecurity', href: '/services/zero-trust', icon: 'Lock', image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80', desc: 'Zero-trust frameworks and threat protection' },
   { label: 'Video Surveillance & Monitoring', href: '/services/video-surveillance', icon: 'Camera', image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80', desc: 'Enterprise CCTV, IP camera systems, and 24/7 monitoring' },
-  { label: 'Disaster Recovery', href: '/services/disaster-recovery', icon: 'RefreshCw', image: 'https://images.unsplash.com/photo-1606778303062-80ba2dbccf08?w=400&q=80', desc: 'Business continuity and failover planning' },
   { label: 'Digital Marketing & Growth', href: '/services/digital-marketing', icon: 'BarChart', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80', desc: 'Performance marketing, SEO, and brand strategy' },
 ]
 
